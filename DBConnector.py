@@ -56,7 +56,7 @@ class DBConnector:
         return data
 
 db  = DBConnector()
-db.selectReader("192.168.0.69")
+db.selectReader("raw_data_192.168.0.69")
 measure = db.getDistinctMeasurementIDs()
 
 g = db.getRSSOfTagsByMeasurement(measure[:100])
