@@ -4,11 +4,11 @@ import MyAlgo
 import json
 
 
-with open("outfile","rb") as f:
+with open("outfile1","rb") as f:
 	l = pickle.load(f)
 
 #l = [[1,2,3],[2,3,4],[4,5,6]]
-l = MyAlgo.findGroups(l[0])
+l = MyAlgo.findGroups(l[3])
 elements = list()
 group = 1
 for s in l:
@@ -26,7 +26,7 @@ for s in l:
 
 json_string = json.dumps(elements)
 print(json_string)
-with open('data.json', 'w') as outfile:
+with open('Reader1-A.json', 'w') as outfile:
 	json.dump(elements, outfile)
 
 
